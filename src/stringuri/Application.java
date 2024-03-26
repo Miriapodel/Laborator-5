@@ -18,7 +18,8 @@ public class Application {
         System.out.println("Are doar litere mari si mici: " + str.matches("[a-zA-Z]+"));
 
 
-        var cuvinte = str.trim().split(" ");
+        var cuvinte = str.replace(".", "").split(" ");
+
         System.out.println(cuvinte[cuvinte.length / 2 - 1] + " " + cuvinte[cuvinte.length / 2 ]);
 
         StringBuilder stringBuilder = new StringBuilder();
